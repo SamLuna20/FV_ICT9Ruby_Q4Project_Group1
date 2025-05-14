@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Online Portolio</title>
+<style>
+ body {
+      font-family:'Parkinsans', sans-serif;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f9f9f9;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 700px;
+      margin-bottom: 30px;
+    }
+
+    td, th {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    
+    .profile-header {
+      background-color: #d9d9d9;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .label {
+      font-weight: bold;
+      white-space: nowrap;
+      width: 150px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: block;
+    }
+
+    .projects-header {
+      background-color: #91d7d5;
+      color: #339390;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .quarter-row {
+      background-color: #91d7d5;
+      color: #339390;
+    }
+
+    details {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .dropdown-content {
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    .q1projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-left: 190px;
+      
+    }
+
+    .q1projects img {
+      width: 400px;
+      height: 220px;
+    }
+
+    .image-wrapper img{
+      flex: 1;
+      text-align: center;
+    }
+
+    #reviewInput{
+      width: 50%;
+    }
+
+    footer{
+      background: radial-gradient(circle,rgba(86, 209, 205, 1) 0%, rgba(193, 120, 194, 1) 50%, rgba(232, 229, 144, 1) 100%);
+      padding: 5px;
+    }
+
+    .navbar{
+      background: linear-gradient(90deg,rgba(86, 209, 205, 1) 0%, rgba(193, 120, 194, 1) 50%, rgba(232, 229, 144, 1) 100%);
+    }
+    .navbar a{
+      color: black
+      font-size: 16px;
+    }
+
+    .next-design {
+      text-align: center;
+      font-size: 20px;
+      background-color: whitesmoke;
+      width: 1250PX;
+      padding: 10px;
+      margin: auto;
+      border: 20px solid; color: #91d7d5;
+
+    }
+
+    p {
+      color: black;
+    }
+
+    img {
+      height: 200px;
+    }
+
+    .rating_ave_allproj {
+      text-align: center;
+      font-size: 20px;
+      background-color: whitesmoke;
+      width: 1250PX;
+      padding: 10px;
+      margin: auto;
+      border: 20px solid; color: #91d7d5;
+
+    }
+  
+</style>
+</head>
+<body>
+
+  <div class="all">
+    <div class="fonts">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </div>
+
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHVuqgJPs1mFipnjsVwsFIYiYwTaulS-1_w&s" style="width:60px; height: 60px">
+
+        <div class="col" >
+          <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="">About us</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#q-1">Quarter 1</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#q-2">Quarter 2</a>
+                      </li>
+                
+                      <li class="nav-item">
+                        <a class="nav-link" href="#q-3">Quarter 3</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#q-4">Quarter 4</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#next">What's Next</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#rate">Rate Us</a>
+                      </li>
+
+
+                    </ul>
+                  </div>
+
+                  <form class="d-flex">
+                  <input class="form-control" type="text" placeholder="search...">
+                  <button class="btn"; style="background-color: ; color: #496973" type="button">Search</button>
+                </form>
+              </div>
+            </nav>
+
+            <center>
+
+  <br><br><br><br>
+
+
+<h1>MY ONLINE PORTFOLIO ཐིཋྀ</h1>
+
+ <table border="1" class="mt-4">
+    <tr>
+      <td rowspan="4">
+        <img src="https://media.discordapp.net/attachments/1366440489489924130/1372047332912398407/profile_picture.png?ex=68255a27&is=682408a7&hm=7df4c97a24d5eb3bb602020aa9c440954a19a12ee89563c39913259ed7165ab9&=&format=webp&quality=lossless&width=1886&height=1818" class="rounded-circle" style="margin-top: 10px;">
+      </td>
+      <td colspan="2" class="profile-header">Profile Information</td>
+    </tr>
+    <tr>
+      <td class="label">Name:</td>
+      <td class="content">Dannielle Luna Q. Dimasuhid</td>
+    </tr>
+    <tr>
+      <td class="label">Interests/Hobbies:</td>
+      <td class="content">Valorant, music, writing</td>
+    </tr>
+    <tr>
+      <td class="label">Ambition:</td>
+      <td class="content">
+        <em>"I’m passionate about my future career in music. I dream to be a singer who performs all around the world."</em>
+      </td>
+    </tr>
+  </table>
+
+<table border="1">
+    <tr>
+      <td rowspan="4">
+        <img src="https://media.discordapp.net/attachments/1366440489489924130/1372045456292450314/me.jpeg?ex=68255868&is=682406e8&hm=ca1c41dcb910559b9accec043c4358e9bb67b6202add956922b95dcb2c46a96e&=&format=webp&width=1240&height=1614" class="rounded-circle" style="margin-top: 35px;">
+      </td>
+      <td colspan="2" class="profile-header">Profile Information</td>
+    </tr>
+    <tr>
+      <td class="label">Name:</td>
+      <td class="content">Sam Bernice G. Luna</td>
+    </tr>
+    <tr>
+      <td class="label">Interests/Hobbies:</td>
+      <td class="content">Playing volleyball, Playing Valorant, Baking, Singing, Dancing</td>
+    </tr>
+    <tr>
+      <td class="label">Ambition:</td>
+      <td class="content">
+        <em>"I aspire to become a lawyer, just like my grandfather. And if paths align, I also hope to be an Ambassador of the Republic of the Philippines one day."</em>
+      </td>
+    </tr>
+  </table>
+
+<table border="1">
+    <tr>
+      <td rowspan="4">
+        <img src="https://media.discordapp.net/attachments/1034228183047864423/1372048779989094441/WIN_20250514_10_26_07_Pro.jpg?ex=68255b80&is=68240a00&hm=0821292d45e5b1ea5649de9ae75a6e099731f89f273e7b2aa0e1b5565106f429&=&format=webp&width=1212&height=1220" class="rounded-circle">
+      </td>
+      <td colspan="2" class="profile-header">Profile Information</td>
+    </tr>
+    <tr>
+      <td class="label">Name:</td>
+      <td class="content">Giana Zoe P. Bernas</td>
+    </tr>
+    <tr>
+      <td class="label">Interests/Hobbies:</td>
+      <td class="content">Collecting, photography, music, anime</td>
+    </tr>
+    <tr>
+      <td class="label">Ambition:</td>
+      <td class="content">
+        <em>""</em>
+      </td>
+    </tr>
+  </table>
+
+<table border="1">
+    <tr>
+      <td rowspan="4">
+        <img src="https://media.discordapp.net/attachments/1284040266688364586/1372051488007917668/Screenshot_2025-05-14_at_11.21.57_AM.png?ex=68255e06&is=68240c86&hm=750870d695e4451378f784c95a24e224a40aaefa23b473091acccfe4f17cf241&=&format=webp&quality=lossless&width=788&height=700" class="rounded-circle" style="margin-top: 10px;">
+      </td>
+      <td colspan="2" class="profile-header">Profile Information</td>
+    </tr>
+    <tr>
+      <td class="label">Name:</td>
+      <td class="content">Julianna Koreen Calaycay</td>
+    </tr>
+    <tr>
+      <td class="label">Interests/Hobbies:</td>
+      <td class="content">Piano, Volleyball, Badminton, Jewelry Making</td>
+    </tr>
+    <tr>
+      <td class="label">Ambition:</td>
+      <td class="content">
+        <em>"I want to graduate from school, become a lawyer, and live aesthetically."</em>
+      </td>
+    </tr>
+  </table>
+
+<table border="1">
+    <tr>
+      <td rowspan="4">
+        <img src="student-image.jpg" alt="NO PHOTO">
+      </td>
+      <td colspan="2" class="profile-header">Profile Information</td>
+    </tr>
+    <tr>
+      <td class="label">Name:</td>
+      <td class="content">Judah Judge</td>
+    </tr>
+    <tr>
+      <td class="label">Interests/Hobbies:</td>
+      <td class="content"></td>
+    </tr>
+    <tr>
+      <td class="label">Ambition:</td>
+      <td class="content">
+        <em>""</em>
+      </td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table border="1" style="width: 1200px; text-align: center">
+    <tr>
+      <td class="projects-header">Quarter Projects</td>
+    </tr>
+
+    <tr class="quarter-row">
+      <td>
+      <details>
+          <summary id="q-1">Quarter 1</summary>
+          <br><br>
+            <div class="q1projects">
+              <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1108550160230920256/1371405021601595392/Screenshot_2025-05-07_114820.png?ex=682303f4&is=6821b274&hm=32e46e7d48642bae302a66e02fad33a853cd3df9403537d5448823c604ef3f80&=&format=webp&quality=lossless&width=1090&height=499">
+
+                <br>
+
+                <h> BERNAS </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369521617671159869/Screenshot_2025-05-07_at_11.39.48_AM.png?ex=6822c166&is=68216fe6&hm=23fdf79b5136f40138ead40986c783b32d82d4e0705c7984f4741ac1a4f8890f&=&format=webp&quality=lossless&width=963&height=550">
+
+                <br>
+
+                <h> CALAYCAY </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369523383024226344/Screenshot_2025-05-07_at_11.51.47_AM.png?ex=6822c30b&is=6821718b&hm=5183cf69fa2c1b8635c78ca40136b1502453dee4e8c8e7e031836214b3cedc78&=&format=webp&quality=lossless&width=963&height=495">
+
+                <br>
+
+                <h> DIMASUHID </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1372050050972127324/image.png?ex=68255caf&is=68240b2f&hm=99afdffa0a6fc5b72d79a9a48d1470c756a7121fde774ff0d37b8ec2b0276339&=&format=webp&quality=lossless&width=1425&height=649">
+
+                <br>
+
+                <h> JUDGE </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper" style="margin-left: 200px"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369653157369741362/att.FaoZVlTpwB9YmnKalRKgT2ooo0aXBPtPszCB4-Lw-oI.jpg?ex=68229327&is=682141a7&hm=a79a5ab7adb8c4969f6e2ea795f10cb7c64714f3712d5bfb716c7936d013850e&=&format=webp&width=963&height=569">
+
+                <br>
+
+                <h> LUNA </h>
+
+                <br><br>
+
+              </div>
+          </div>
+        </details>
+      </td>
+    </tr>
+
+    <tr class="quarter-row">
+      <td>
+        <details>
+          <summary id="q-2">Quarter 2</summary>
+          <br><br>
+            <div class="q1projects">
+              <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1108550160230920256/1371798495060693053/image.png?ex=68247268&is=682320e8&hm=f651c091d80ea52feb0ec0ab21bbda2c9538911dd26746845bb28712d5ac5f09&=&format=webp&quality=lossless&width=1090&height=499">
+
+                <br>
+
+                <h> BERNAS </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369521618896031775/Screenshot_2025-05-07_at_11.40.37_AM.png?ex=68256466&is=682412e6&hm=c7c28779afeb5f6f425c662ac73e92217ed8cf8bf5be6bc3daebc29984440885&=&format=webp&quality=lossless&width=2280&height=1310">
+
+                <br>
+
+                <h> CALAYCAY </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369523383779463220/Screenshot_2025-05-07_at_11.54.14_AM.png?ex=6825660b&is=6824148b&hm=9e944839872e6b19ea3ab2499baa6b9db90a857e722767119f3c32a903f2e7f0&=&format=webp&quality=lossless&width=2570&height=1310">
+
+                <br>
+
+                <h> DIMASUHID </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1372050050443776071/image.png?ex=68255caf&is=68240b2f&hm=a865f080242dbc53c7962b7684ffa525cf28ae81ef4aa7e258f04c5a94465037&=&format=webp&quality=lossless&width=1414&height=649">
+
+                <br>
+
+                <h> JUDGE </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper" style="margin-left: 200px"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369653158195888148/att.6S_KYvKxRLdF3oZSzrt4CFOyY2SRjggsscb0nz6BQXw.jpg?ex=6825dee7&is=68248d67&hm=e4e6d830e6292eeb68e52b55b35a3ae68bcadb0f67119858584ffcde8d09b3de&=&format=webp&width=2324&height=1310">
+
+                <br>
+
+                <h> LUNA </h>
+
+                <br><br>
+
+              </div>
+          </div>
+        </details>
+      </td>
+    </tr>
+
+    <tr class="quarter-row">
+      <td>
+        <details>
+          <summary id="q-3">Quarter 3</summary>
+          <br><br>
+            <div class="q1projects">
+              <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369521620049199124/Screenshot_2025-05-07_at_11.49.06_AM.png?ex=682412e6&is=6822c166&hm=2be6823ef81535f0045bcb1570b2f6db0b52a156827d2b4b21d76f1d5bf773cc&=&format=webp&quality=lossless&width=960&height=548">
+
+                <br>
+
+                <h> BERNAS </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369521620049199124/Screenshot_2025-05-07_at_11.49.06_AM.png?ex=68256466&is=682412e6&hm=ab31bcc8474f3d9545a4ae9b3c5072ef5461c12db8d6f0a74eec36b10d464858&=&format=webp&quality=lossless&width=2300&height=1310">
+
+                <br>
+
+                <h> CALAYCAY </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369523384471392306/Screenshot_2025-05-07_at_11.56.46_AM.png?ex=6825660b&is=6824148b&hm=237ba497f557e81f6e34b17c56e99154d16f7334c58d65394effacc93becff3a&=&format=webp&quality=lossless&width=2636&height=1212">
+
+                <br>
+
+                <h> DIMASUHID </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1372050050007437343/image.png?ex=68255caf&is=68240b2f&hm=2eb8dd8880e826b9806361d56c53272394be9f19a50961056e79bead238af515&=&format=webp&quality=lossless&width=960&height=439">
+
+                <br>
+
+                <h> JUDGE </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper" style="margin-left: 200px"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369653158724239400/att.xkD68zsbktFjBvP_F8nt6Ujqky7D-GrXGvHcBuvVBkY.jpg?ex=6825dee7&is=68248d67&hm=71db3764b35ecfa03a48ce34b458c97f3f59e8ec442b583106ca551090df170a&=&format=webp&width=2324&height=1310">
+
+                <br>
+
+                <h> LUNA </h>
+
+                <br><br>
+
+              </div>
+          </div>
+        </details>
+      </td>
+    </tr>
+
+      <tr class="quarter-row">
+      <td>
+        <details>
+          <summary id="q-4">Quarter 4</summary>
+          <br><br>
+            <div class="q1projects">
+              <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1108550160230920256/1371982208327352463/image.png?ex=68251d80&is=6823cc00&hm=dfd8041e50b97d0d8b52c7b068506fc2d3a5e2538db8cf7d3b2769111665418b&=&format=webp&quality=lossless&width=1454&height=649">
+
+                <br>
+
+                <h> BERNAS </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1371800504052617346/Screenshot_2025-05-13_at_6.44.41_PM.png?ex=6825c5c6&is=68247446&hm=3b5bf6d8bc1ba203e9334aac8f4bedda35ef04009761819af3b14d2bc6cbb07b&=&format=webp&quality=lossless&width=2280&height=1310">
+
+                <br>
+
+                <h> CALAYCAY </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1372041295823896586/Screenshot_2025-05-14_at_10.42.01_AM.png?ex=68255488&is=68240308&hm=448438463c22ec9a7ee29a2c22d22ec97b5049a40360feeb2beeabab59ccd25c&=&format=webp&quality=lossless&width=698&height=779">
+
+                <br>
+
+                <h> DIMASUHID </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper"><img src="https://media.discordapp.net/attachments/1366440489489924130/1372051125989146644/image.png?ex=68255daf&is=68240c2f&hm=4b61d429110d6b6a1ac938805fc8feb6b2e2789234a16b3be3325d80fa986156&=&format=webp&quality=lossless&width=1420&height=649">
+
+                <br>
+
+                <h> JUDGE </h>
+
+                <br><br>
+
+              </div>
+
+                <div class="image-wrapper" style="margin-left: 200px"><img src="https://media.discordapp.net/attachments/1366440489489924130/1369653159365972188/att.tb2OoAaoSna86eOz1Tn1E4x0bZHjsKnVtYoESBzhiWc.jpg?ex=6825dee8&is=68248d68&hm=890d4f38d3ebf8aadfc625a5073e60267d8d5adbc6836bb27addc9ea6983906c&=&format=webp&width=2318&height=1310">
+
+                <br>
+
+                <h> LUNA </h>
+
+                <br><br>
+
+              </div>
+          </div>
+        </details>
+
+  </table>
+
+  <br><br>
+
+              
+
+        <div class="rating_ave_allproj">
+
+          <br>
+
+          <h1 id="next" style="color: black;">Get Your Average Rating of All Outputs!</h1>
+
+          <details>
+            <summary><u><i> Click me! </i></u></summary>
+
+            <br>
+
+            <p> In this section, please input your rating of all projects in each quarter in order to get your average rating of the entire group's work. Make sure to rate it from the ranges of 1-10. </p>
+          </details>
+
+          <div class="row">
+                  <div class="col-md-3">
+
+                    <br><br>
+                     <p>Quarter 1</p>
+              
+                      <br>
+
+                       <label>
+                               <input id="q1_input" class="form-control" type="number" placeholder="Rate from 1-10">
+                           </label>
+
+                         <br><br>
+
+                   </div>
+
+                <div class="col-md-3">
+
+                  <br><br>
+                     <p>Quarter 2</p>
+                      
+                        <br>
+
+                        <label>
+                             <input id="q2_input" class="form-control" type="number" placeholder="Rate from 1-10">
+
+
+                          </label>  
+
+                </div>
+
+                <div class="col-md-3">
+
+                  <br><br>
+                      <p>Quarter 3</p>
+
+                  <br>
+
+                  <label>
+                       <input id="q3_input" class="form-control" type="number" placeholder="Rate from 1-10">
+
+                </div>
+
+                <div class="col-md-3">
+
+                  <br><br>
+                      <p>Quarter 4</p>
+
+                  <br>
+
+                  <label>
+                       <input id="q4_input" class="form-control" type="number" placeholder="Rate from 1-10">
+                    </label>        
+
+                </div>
+            </div>
+
+
+                <br>
+
+                <button type="submit" class="btn btn-info" onclick="getavscore()">Get the group's average rating!</button>
+
+                <br><br>
+
+              </div>
+
+                <br>
+
+                <br>
+
+                <br>
+    </div>
+</div>
+
+</center>
+
+<script>
+// Function for the score calculations.
+function getavscore(){
+    var quarter1 = Number(document.getElementById("q1_input").value);
+    var quarter2 = Number(document.getElementById("q2_input").value);
+    var quarter3 = Number(document.getElementById("q3_input").value);
+    var quarter4 = Number(document.getElementById("q4_input").value);
+    var ratingTotal = quarter1 + quarter2 + quarter3 + quarter4;
+    var ratingAve = ratingTotal/4;
+  let ratingAveResult = Math.round(ratingAve * 100)/100;
+
+  switch(true){
+  case (ratingAveResult >= 9 && ratingAveResult <= 10):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Excellent. Thank you! We really put in a lot of effort in all our projects, so it means a lot. Glad you liked it! ");
+    break;
+
+  case (ratingAveResult >= 7 && ratingAveResult <= 8.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Above Satisfactory. Appreciate the feedback! Always room to grow--aiming for that 10/10 next round.");
+    break;
+
+  case (ratingAveResult >= 5 && ratingAveResult <= 6.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating:  Satisfactory. Thanks! It's always good to get different perspectives. We'll learn from it!");
+    break;
+
+  case (ratingAveResult >= 3 && ratingAveResult <= 4.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Needs Improvement. Thanks for the honesty! We're learning from this and aiming to come back better.");
+    break;
+
+  case (ratingAveResult >= 1 && ratingAveResult <= 2.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Poor. Apprecite you sharing your thoughts. We'll leave it at that.");
+    break;
+
+  default:
+    alert("Please input your scores.");
+    
+  }
+}
+
+
+</script>
+
+<script>
+  
+  function submitReview() {
+    alert("Thanks for the feedback! We will keep that in mind.")
+  }
+
+</script>
+
+<div class="next-design">
+
+  <h1 id="next" style="color: black;">What's Next?</h1>
+
+  <br/>
+
+  <p>Now that we are moving onto Gr. 10, we are expecting to learn about more digital tools and collaboration!</p>
+
+  <p>Thank you for looking at our website! Hope to see you again soon ♡</p>
+
+
+
+  <h1 id="rate" style="color: black;">Rate Us!</h1>
+
+        <textarea id="reviewInput" placeholder="Type your review here..." rows="4"></textarea><br>
+        <button onclick="submitReview()" class="btn btn-info mt-3" >Submit</button>
+
+
+
+  <h2 class="mt-5" style="color: black;"> HELP CENTER </h2>
+
+  <p> Need some help? Contact Us! </p>
+        <br>
+        <p> Office: xxxxx xxxxxx xx xxxxxxxxxx xxxx </p>
+
+  </div>
+
+  <br><br>
+
+  <footer class="mb-3" style="width:1500px; text-align: center"><span>
+    O.B. Montessori Center Fairview Campus
+    <br>
+    @Sam Luna, Giana Bernas, Julianna Calaycay, Luna Dimasuhid, Judah Judge
+  </span></footer>
+
+  <br>
+
+</span> <br><br><a style="color: black" href="https://docs.google.com/document/d/1GpUgfJQdvrYbKOygsKrxFKBb2qjYcpDZGYvjQ6A3o1I/edit?usp=sharing">References!</a></footer>
+ 
+</body>
+</html>
